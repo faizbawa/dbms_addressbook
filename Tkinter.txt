@@ -1,0 +1,13 @@
+--------------------to Build GUI--------------------------
+from tkinter import *
+window = Tk()
+window.geometry("300x300")
+window.title("welcome")
+
+label1=Label(window,text="Welcome to Tkinter", fg='blue', bg='yellow',relief="solid", font=("areal", 16, "bold"))
+label1.pack(fill=BOTH, pady=2,padx=2)
+
+button1=Button(window,text="DEMO", fg='blue', bg='yellow', relief=RAISED, font=("areal", 16, "bold"))
+button1.place(x=110,y=110)                              #GROOVE, RIDGE, SUNKUN, RAISED
+
+window.mainloop()
